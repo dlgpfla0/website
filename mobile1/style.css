@@ -1,0 +1,258 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+}
+body, html {
+    width: 100%;
+    height: 100%;
+    overflow-x:hidden;
+}
+ul {
+    list-style:none;
+}
+a {
+    text-decoration:none;
+    color:#333;
+    font-family: 'Noto Serif KR', sans-serif;
+}
+.Container {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+.Wrap {
+    width:1080px;
+    height:1920px;
+    position:relative;
+    float:left;
+    background:#c2c2c2;
+    margin: 0 auto;
+}
+.hd {
+    position:relative;
+    margin: 0 auto;
+    background-image:url("./images/mainBG.jpg");
+    width:1080px;
+    height:960px;
+}
+.logo {
+    display: block;
+    position: relative;
+    margin-left: 60px;
+    top: 50px;
+    float:left;
+}
+/* main */
+.main {
+    position: absolute;
+    top: 50px;
+    float: right;
+    width: 100%;
+    height: 80%;
+}
+.main .menuBtn {
+    position:relative;
+    float: right;
+    right: 70px;
+}
+.main .gnb {
+    width: 80%;
+    height: 700px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+.gnb .mainMenu {
+    width: 100%;
+    height: 100%;
+}
+.mainMenu .dep1 {
+    width: 245px;
+    background-image: url(./images/mainmenu1.png);
+    height: 293px;
+    margin-left: 100px;
+    margin-top: 50px;
+    position: absolute;
+}
+.dep1 li.mMenu {
+    width: 110px;
+    height: 30px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 170px;
+}
+.dep1 li.mMenu a {
+    color:#fff;
+    font-size:20px;
+    display: block;
+    padding-top: 20px;
+}
+.dep1 li.mMenu a:hover {
+    color:#333;
+}
+.dep1 li.subMenu {
+    display:none;
+}
+.mainMenu .dep2 {
+    width: 248px;
+    background-image: url(./images/mainmenu2.png);
+    height: 292px;
+    margin-top: 50px;
+    position: relative;
+    float: right;
+    right: 100px;
+}
+.dep2 li.mMenu {
+    width: 110px;
+    height: 30px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 195px;
+}
+.dep2 li.mMenu a {
+    color:#fff;
+    font-size:20px;
+}
+.dep2 li.mMenu a:hover {
+    color:#333;
+}
+.dep2 li.subMenu {
+    display:none;
+} 
+.mainMenu .dep3 {
+    width: 245px;
+    background-image: url(./images/mainmenu3.png);
+    height: 293px;
+    margin-left: 100px;
+    margin-top: 400px;
+    position: absolute;
+}
+.dep3 li.mMenu {
+    width: 110px;
+    height: 30px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 195px;
+}
+.dep3 li.mMenu a {
+    color:#fff;
+    font-size:20px;
+}
+.dep3 li.mMenu a:hover {
+    color:#333;
+}
+.dep3 li.subMenu {
+    display:none;
+} 
+.mainMenu .dep4 {
+    width: 248px;
+    background-image: url(./images/mainmenu4.png);
+    height: 293px;
+    margin-top: 400px;
+    position: relative;
+    float: right;
+    right: -145px;
+}
+.dep4 li.mMenu {
+    width: 110px;
+    height: 30px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 195px;
+}
+.dep4 li.mMenu a {
+    color:#fff;
+    font-size:20px;
+}
+.dep4 li.mMenu a:hover {
+    color:#333;
+}
+.dep4 li.subMenu {
+    display:none;
+} 
+
+/* ft */
+#ft {
+    width: 100%;
+    height:960px;
+}
+.ftmenu {
+    width: 95%;
+    height: 100%;
+    margin:0 auto;
+    background:#333;
+}
+.ftmenu .ftdep {
+    width: 90%;
+    height: 70%;
+    border-bottom: 1px solid #fff;
+    margin: 0 auto;
+}
+.ftdep li a {
+    color:#fff;
+}
+.ftdep .ftFrame {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    top: 40px;
+    left: 70px;
+}
+.ftFrame li {
+    font-size:20px;
+    float: left;
+}
+.ftFrame .txtFrame {
+    font-size: 17px;
+    width: 170px;
+    box-sizing: border-box;
+    font-weight: 200;
+    position: absolute;
+    float: left;
+    left: 50px;
+    top: 60px;
+}
+.txtFrame a {
+    padding-bottom: 20px;
+    display: block;
+}
+.txtFrame a:hover {
+    text-decoration: underline;
+}
+.ftdep .ftFrame:nth-child(2) {
+    float: right;
+    position: relative;
+    top: -262px;
+    margin-right: 100px;
+}
+.ftFrame .txtFrame:nth-child(2) {
+    width: 250px;
+}
+.ftdep .ftFrame:last-child {
+    float: right;
+    position: relative;
+    top: -262px;
+    margin-right: 100px;
+}
+.copyright {
+    position: relative;
+    color: #fff;
+    top: -210px;
+    left: 145px;
+    font-family: 'Noto Serif KR', sans-serif;
+    font-size:14px;
+}
+.copyright a {
+    color: #fff;
+}
+.copyright a:hover {
+    text-decoration: underline;
+}
+.copyright .search {
+    position:relative;
+    display: block;
+    height: 30px;
+    width: 90px;
+    font-size: 18px;
+    top: -50px;
+}
