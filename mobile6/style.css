@@ -1,0 +1,329 @@
+@charset "utf-8";
+@import url(http://cdn.jsdelivr.net/font-nanum/1.0/nanumbarungothic/nanumbarungothic.css);
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body, html {
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    font-family: 'Nanum Barun Gothic';
+    color: #333;
+}
+
+#wrap {
+    clear: both;
+    width: 100%;
+}
+.ck {
+    display:none;
+}
+.hd {
+    height: 47px;
+    background:#fff;
+    border-bottom: 1px solid #eee;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+}
+.logo {
+    display: block;
+    padding-left: 20px;
+    top: 20px;
+    padding-top: 10px;
+}
+.lst {
+    position: absolute;
+    top:15px;
+    right:20px;
+    z-index: 20;
+}
+
+/* 메뉴부분 */
+.moWrap {
+    clear: both;
+    width: calc(100% + 300px);
+    height: 100%;
+    z-index: 999;
+    position: absolute;
+}
+.gnb {
+    width:300px;
+    height: 100%;
+    background:#eee;
+    margin-left:-300px;
+    transition:0.6s;
+    float:left;
+}
+.gnb li {
+    line-height:50px;
+}
+.gnb a {
+    display: block;
+    text-indent:20px;
+    line-height:50x;
+    font-size:19px;
+    font-weight: lighter;
+}
+#menu_call:checked ~ .moWrap .gnb {
+    margin-left: 0;
+}
+#menu_call:not(:checked) ~ .hd .lst .fa-bars {
+    display: block;
+}
+#menu_call:not(:checked) ~ .hd .lst .fa-times {
+    display: none;
+}
+#menu_call:checked ~ .hd .lst .fa-bars {
+    display: none;
+}
+#menu_call:checked ~ .hd .lst .fa-times {
+    display: block;
+}
+.menu li.dep1 {
+    line-height: 50px;
+}
+.menu li.dep1 a {
+    display: block;
+    line-height: 50px;
+    border-bottom:1px solid #fff;
+}
+.sub li {
+    line-height: 50px;
+}
+.sub {
+    display: none;
+}
+.sub:checked {
+    display: block;
+}
+
+/* 컨텐츠영역 */
+.contents {
+    clear: both;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.main1 {
+    position:relative;
+    width: 100%;
+    height: 235px;
+}
+.main1 .slider {
+    width: 600%;
+    overflow: hidden;
+}
+ul.imgBox {
+    width: 100%;
+}
+.slider li {
+    float: left;
+    position: relative;
+    width: 16.6666%;
+    list-style: none;
+}
+
+
+/* main2 */
+.main2 {
+    position: relative;
+    width: 100%;
+    height: 469px;
+}
+.main2 .m2_txtBox {
+    position: relative;
+    width: 342px;
+    height: 362px;
+    margin: 0 auto;
+    top: -362px;
+}
+
+/* main3 */
+.main3 {
+    width: 375px;
+    height: 468px;
+    position: relative;
+}
+.m3_txtBox {
+    width: 80%;
+    position: relative;
+    margin: 0 auto;
+    top: -350px;
+    height: 28px;
+}
+.m3_txtBox a {
+    float: left;
+    display: block;
+    padding-right: 10px;
+}
+.m3_txtBox a:last-child {
+    display: block;
+    padding-right: 0;
+}
+a.m3_img {
+    position: relative;
+    margin: 0 auto;
+    display: block;
+    width: 282px;
+    height: 228px;
+    top: -300px;
+}
+
+/* main4 */
+.main4 {
+    position: relative;
+    width: 100%;
+    height: 446px;
+}
+.m4.imgFrame {
+    width: 375px;
+    height: 446px;
+    position: absolute;
+}
+a.m4_txt {
+    width: 95px;
+    height: 25px;
+    position: relative;
+    margin: 0 auto;
+    display: block;
+    top: -300px;
+}
+.m4_product {
+    width: 90%;
+    position: relative;
+    margin: 0 auto;
+    height: 215px;
+    top: -280px;
+}
+.m4_product .pro {
+    width: 100%;
+}
+.m4_product li {
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+
+/* main5 */
+.main5 {
+    width: 100%;
+    height: 446px;
+    position: relative;
+}
+.m5.imgFrame {
+    position: absolute;
+    width: 100%;
+    height: 446px;
+}
+a.grid {
+    display: block;
+    width: 50%;
+    height: 223px;
+}
+a.grid.box1 {
+    left: 0;
+    float: left;
+    display: block;
+}
+a.grid.box2 {
+    display: block;
+    right: 0;
+    float: right;
+}
+a.grid.box3 {
+    display: block;
+    left: 0;
+    float: left;
+}
+a.grid.box4 {
+    display: block;
+    right: 0;
+    float: right;
+}
+/* main6 */
+.main6 {
+    width: 100%;
+    height: 735px;
+    position: relative;
+}
+.m6.imgFrame {
+    width: 375px;
+    height: 735px;
+    position: absolute;
+}
+.m6_txtBox {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    top: -630px;
+}
+a.m6_txt1 {
+    display: block;
+    width: 169px;
+    height: 25px;
+    margin: 0 auto;
+}
+ul.news {
+    width: 80%;
+    position: relative;
+    height: 180px;
+    margin: 0 auto;
+    top: 20px;
+}
+.m6_txtBox li {
+    width:40%;
+    float: left;
+    padding-right: 30px;
+}
+.m6_txtBox li:nth-child(2) {
+    padding-right: 0;
+    float: right;
+}
+
+/* footer */
+.fnb {
+    width: 100%;
+    position: relative;
+    height: 156px;
+}
+ul.fMenu {
+    background:#f1f1f1;
+    height: 28px;
+    width: 100%;
+}
+.fMenu li {
+    float: left;
+    line-height:28px;
+    text-align: center;
+    padding-right:20px;
+}
+.fMenu li:first-child {
+    padding-left:10px;
+}
+.fMenu li:last-child {
+    padding-right: 0;
+}
+.fMenu li a {
+    display: block;
+    line-height: 28px;
+    font-size:15px;
+    font-weight:bold;
+}
+.copyright {
+    font-size: 12px;
+    display: block;
+    width: 100%;
+    height: 155px;
+    text-align: center;
+}
