@@ -1,0 +1,539 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+}
+body, html {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+/*
+::-webkit-scrollbar {
+    display: none;
+}
+::-moz-scrollbar {
+    display: none;
+}
+::-ms-scrollbar {
+    display:none;
+}
+::-o-scrollbar {
+    display: none;
+}
+*/
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color:#333;
+    font-family: 'NanumSquare', sans-serif;
+}
+
+#wrap {
+    clear:both;
+    width: 100%;
+    height: 100%;
+}
+#hd {
+    width: 965px;
+    position:relative;
+    margin: 0 auto;
+    z-index:99;
+}
+
+#tnb_left {
+    float: left;
+    left: 0;
+    position: relative;
+}
+#tnb_left li.tnb_dep {
+    width: 97px;
+    height: 28px;
+    text-align: center;
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+.tnb_dep ul.lang {
+    display: none;
+}
+#tnb_right {
+    float: right;
+    position: absolute;
+    right: 0;
+}
+#tnb_right li {
+    float: left;
+    margin-left:15px;
+    font-size:17px;
+}
+/* 메뉴부분 */
+.header {
+    display: block;
+}
+#hd #gnb {
+    width: 600px;
+    position: absolute;
+    float: right;
+    right: 40px;
+    top: 60px;
+}
+#gnb li {
+    float: left;
+    width: 120px;
+}
+#gnb li a {
+    display: block;
+    text-align: center;
+    color: #fff;
+}
+#gnb li a.mMenu {
+    font-size:18px;
+    display: block;
+    font-weight:bold;
+}
+#gnb .sub {
+    position: relative;
+    top: 20px;
+    display: none;
+    z-index: 20;
+}
+#gnb li.dep1 .sub li {
+    line-height: 30px;
+}
+#gnb li.dep1 ul.sub li a {
+    display: block;
+    line-height: 30px;
+    font-size:17px;
+}
+
+/* main1 */
+#main {
+    clear: both;
+    position: relative;
+    width: 100%;
+    top: -108px;
+}
+.main1 {
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    height:auto;
+}
+.mainSlider {
+    width: 300%;
+    position: relative;
+}
+.mainSlider .imgFrame {
+    position: absolute;
+}
+.imgFrame li {
+    float: left;
+    width: 33.3333%;
+}
+/* 페이드인 슬라이드를 하려면 무조건 img에 position:absolute;를 넣어야 함!! */
+.imgFrame li a img {
+    position: absolute;
+}
+
+
+/* main2 */
+/*
+.main2 {
+    position: relative;
+    width: 100%;
+    height: auto;
+    top: -112px;
+    clear:both;
+    overflow: hidden; 
+}
+.m2_section {
+    width: 300%;
+    position: absolute;
+    float: left;
+}
+.main2 {
+    position: relative;
+    width: 100%;
+    height: auto;
+    top: -112px;
+    clear:both;
+    overflow: hidden;
+}
+.slider {
+    position: relative;
+    width: 300%;
+    overflow: hidden;
+}
+.slider figure {
+    width: 33.3333%;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+.imgBox2-1 {
+    position: absolute;
+    top: 30%;
+    width: 80%;
+    left: 250px;
+}
+.imgBox2-1 div {
+    float: left;
+    position: relative;
+    margin-right:100px;
+}
+.imgBox2-1 div:last-child {
+    margin-right:0;
+}
+.imgBox2-2 {
+    position: absolute;
+    top: 38%;
+    width: 80%;
+    left: 320px;
+}
+.imgBox2-2 div {
+    float: left;
+    position: relative;
+    margin-right:100px;
+}
+.imgBox2-3 {
+    position: absolute;
+    top: 38%;
+    width: 80%;
+    left: 360px;
+}
+.imgBox2-3 div {
+    float: left;
+    position: relative;
+    margin-right:130px;
+}
+figure.sliderBox .imgBox2-1 div img {
+    opacity: 1;
+    -webkit-transition:opacity 0.35s;
+    transition:opacity 0.35s;
+}
+figure.sliderBox .imgBox2-1 div:hover img {
+    opacity: 0.6;
+}
+p.com::before, p.com::after {
+    position: relative;
+    top: -100px;
+    content: " ";
+    opacity: 0;
+    transition: opacity 0.35s, transform 0.35s;
+    font-family: 'Roboto Slab', serif;
+    color: #333;
+    font-size: 20px;
+}
+p.com::before {
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+    transform: scale(0,1);
+}
+p.com::after {
+    border-right:1px solid #333;
+    border-left: 1px solid #333;
+    transform: scale(1,0);
+}
+p.com {
+    opacity:0;
+    transition:opacity 0.35s, transform 0.35s;
+    transform:translate3d(0,20px,0);
+}
+figure.sliderBox .imgBox2-1 div:hover p.com::before, figure.sliderBox .imgBox2-1 div:hover p.com::after {
+    opacity: 1;
+    transform: scale(1);
+}
+figure.sliderBox .imgBox2-1 div:hover p.com {
+    opacity: 1;
+    transform: translate3d(0,0,0);
+}
+.slider .pagination {
+    width:100px;
+    position: relative;
+    margin: 10px auto;
+}
+.pagination button {
+    display: block;
+    outline: 0;
+    border: 0;
+    border-radius:10px;
+    width:10px;
+    height:10px;
+    float: left;
+    margin: 5px;
+    background-color:gainsboro;
+    cursor:pointer;
+    text-indent:-9999px;
+}
+.pagination button.on {
+    background-color:firebrick;
+}
+*/
+/* main3 */
+.main3 {
+    position: relative;
+    width: 100%;
+    top: -112px;
+    height: 541px;
+}
+.main3 .imgBox {
+    width: 100%;
+    height: 100%;
+}
+.imgBox li {
+    cursor: pointer;
+    width: 100%;
+    height: 541px;
+}
+
+/* main4 */
+.main4 {
+    position: relative;
+    width: 100%;
+    height:540px;
+    top: -112px;
+    clear: both;
+}
+.m4_imgFrame {
+    width: 100%;
+    height: 100%;
+}
+.m4_txtFrame {
+    width: 350px;
+    height: 350px;
+    position: relative;
+    float: right;
+    right: 400px;
+    top: -350px;
+}
+.m4_txtFrame p {
+    font-size: 19px;
+    padding-bottom: 10px;
+}
+.m4_txtFrame button {
+    display: block;
+    width: 80px;
+    height: 25px;
+    outline: 0;
+    border: 0;
+    background: #0b2168;
+    border-radius: 10px;
+    position: relative;
+    top: -50px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: lighter;
+    text-align: center;
+    line-height: 25px;
+    left: 25px;
+    cursor: pointer;
+}
+
+/* main5 */
+.main5 {
+    width: 100%;
+    height: 540px;
+    position: relative;
+    top: -112px;
+}
+.m5_imgFrame {
+    width: 100%;
+    height: 540px;
+    position: absolute;
+}
+.snsFrame {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1920px;
+    width: 50%;
+    height: 250px;
+    box-sizing: border-box;
+    top: 170px;
+}
+.snsFrame figure {
+    float: left;
+    position: relative;
+    overflow: hidden;
+    min-width:195px;
+    max-width:295px;
+    max-height:250px;
+    width: 33.3333%;
+    text-align: center;
+    cursor: pointer;
+}
+.snsFrame figure img {
+    display: block;
+    position: relative;
+    min-height:100%;
+    max-width:100%;
+}
+figure.snsBox img {
+    opacity:1;
+    transition:opacity 0.35s;
+    transform:scale(1);
+}
+figure.snsBox:hover img {
+    opacity:0.7;
+    transform:scale(1.5);
+}
+figure.snsBox figcaption {
+    width: 180px;
+    height: 100px;
+    position: relative;
+    margin-left: 34px;
+}
+figure.snsBox h2 {
+    margin-top: -50px;
+    border: 1px solid #fff;
+    opacity: 0;
+    transition: opacity 0.35s, transform 0.35s;
+    transform: translate3d(0,20px,0) scale(1.1);
+    font-size: 15px;
+    color: #fff;
+}
+figure.snsBox:hover h2 {
+    opacity: 1;
+    transform:translate3d(0,0,0) scale(1);
+}
+
+/* main6 */
+.main6 {
+    width: 100%;
+    height: 541px;
+    top: -112px;
+    position: relative;
+
+}
+.main6 figure.map {
+    display: block;
+    position: absolute;
+    top: 100px;
+    left: 20%;
+    cursor: pointer;
+    width: 315px;
+    height: 408px;
+}
+.main6 figure.map:hover div {
+    opacity:1;
+}
+figure.map div {
+    text-align: left;
+    text-align: left;
+    position: absolute;
+    opacity: 0;
+    top: 100px;
+    left: 400px;
+}
+figure.map div a {
+    display: block;
+    background: rgba(255,255,255,0.9);
+    color:#333;
+    text-transform: none;
+    font-weight:bold;
+    font-size:22px;
+    transition: opacity 0.35s, transform 0.35s;
+    margin-bottom: 40px;
+    padding: 0.4em 1em;
+    transform:translate3d(-360px,0,0);
+}
+figure.map a:first-child {
+    transition-delay:0.15s;
+}
+figure.map a:nth-of-type(2) {
+    transition-delay:0.1s;
+}
+figure.map a:nth-of-type(3) {
+    transition-delay:0.05s;
+}
+figure.map:hover a:first-child {
+    transition-delay:0s;
+}
+figure.map:hover a:nth-of-type(2) {
+    transition-delay:0.05s;
+}
+figure.map:hover a:nth-of-type(3) {
+    transition-delay:0.1s;
+}
+figure.map:hover a {
+    opacity: 1;
+    transform:translate3d(0,0,0);
+}
+
+/* footer */
+#ft {
+    position: relative;
+    width: 100%;
+    height: 135px;
+    background:#515151;
+    top: -113px;
+}
+.ftFrame {
+    width:60%;
+    height: auto;
+    position: relative;
+    margin: 0 auto;
+    height: 70%;
+    box-sizing: border-box;
+}
+.ftLogo {
+    display: block;
+    float: left;
+    width: 78px;
+    height: 92px;
+    margin: 20px;
+}
+.fnb {
+    width: 800px;
+    height: 40px;
+    position: relative;
+    left: 100px;
+    top: 20px;
+    line-height: 40px;
+    margin: 0 auto;
+}
+.fnb li {
+    float: left;
+    position: relative;
+    width: 130px;
+    line-height: 40px;
+}
+.fnb li a {
+    display: block;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    font-size:17px;
+}
+.fnb li a:hover {
+    text-decoration: underline;
+}
+.fnb li:first-child a {
+    color:firebrick;
+}
+p.copyright {
+    position: relative;
+    width: 600px;
+    display: block;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 15px;
+    top: 25px;
+    border-top: 1px solid #333;
+    text-align: center;
+    padding-top: 7px;
+}
+a.sns {
+    display: block;
+    float: right;
+    position: relative;
+    width: 150px;
+    height: 50px;
+    top: -40px;
+}
+a.sns img {
+    display: block;
+    float: left;
+    margin-right: 20px;
+}
