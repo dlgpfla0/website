@@ -1,0 +1,352 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+}
+body, html {
+    width: 100%;
+    height:100%;
+    overflow-x:hidden;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #333;
+    font-family: 'Noto S!ans KR', sans-serif;
+}
+#wrap {
+    clear: both;
+}
+.ck {
+    display: none;
+}
+.hd {
+    width: 100%;
+    position: relative;
+    height:51px;
+    background: #fff;
+    box-sizing: border-box;
+}
+.logo {
+    display: block;
+    position: relative;
+    width: 173px;
+    height: 29px;
+    margin: 0 auto;
+    top: 10px;
+}
+.lst {
+    position: absolute;
+    right: 20px;
+    z-index: 20;
+    top: 15px;
+}
+.search {
+    position: absolute;
+    left: 20px;
+    z-index: 20;
+    top: 15px;
+}
+.moWrap {
+    display:none;
+}
+
+/* main1 */
+.content {
+    clear: both;
+    width: 100%;
+    position: relative;
+}
+
+.main1 {
+    position:relative;
+    width: 100%;
+    height: 188px;
+}
+.imgBox {
+    width: 300%;
+    overflow: hidden;
+}
+.slider {
+    width: 100%;
+    overflow: hidden;
+}
+.slider li {
+    float: left;
+    width: 33.3333%;
+    position: absolute;
+}
+.imgBox button {
+    display: block;
+    outline: 0;
+    border: 0;
+    width: 19px;
+    height: 21px;
+    background-color:transparent;
+    text-indent: -9999px;
+    cursor: pointer;
+    z-index: 99;
+}
+.imgBox button.left {
+    background-image: url("./images/btn_left.png");
+    float: left;
+    left:8px;
+    position: absolute;
+    display: block;
+    top:90px;
+}
+.imgBox button.right {
+    background-image: url("./images/btn_right.png");
+    float:right;
+    right:8px;
+    position: absolute;
+    display: block;
+    top:90px;
+}
+
+/* banner */
+.ban {
+    width: 100%;
+    position: relative;
+    height: 33px;
+    border-bottom: 1px solid #eee;
+    border-top: 1px solid #eee;
+}
+.banner {
+    display: block;
+}
+
+/* grid */
+.grid {
+    clear: both;
+    width: 100%;
+    position: relative;
+}
+.con1 {
+    width: 100%;
+    height:112px;
+    border-bottom:1px solid #eee;
+    box-sizing: border-box;
+}
+.con1 li {
+    float: left;
+    width: 24.8%;
+    height: 112px;
+    position: relative;
+    text-align: center;
+    padding-top:2px;
+    border-right: 1px solid #eee;
+}
+.con1 li:last-child {
+    border-right: 0;
+}
+.con1 li p {
+    display: block;
+    font-size:11px;
+    padding-top:2px;
+}
+.con1 li:nth-child(2) p {
+    display: block;
+    font-size: 10px;
+    padding-top: 3px;
+}
+.con2 {
+    width: 100%;
+    height: 112px;
+    border-bottom:1px solid #eee;
+    box-sizing: border-box;
+}
+.con2 li {
+    float: left;
+    width: 24.8%;
+    height: 110px;
+    position: relative;
+    text-align: center;
+    padding-top:2px;
+    border-right: 1px solid #eee;
+}
+.con2 li:last-child {
+    border-right: 0;
+}
+.con2 li p {
+    display: block;
+    font-size:11px;
+    padding-top:2px;
+}
+.con3 {
+    width: 100%;
+    height: 112px;
+    border-bottom:1px solid #eee;
+    box-sizing: border-box;
+}
+.con3 li {
+    float: left;
+    width: 24.8%;
+    height: 110px;
+    position: relative;
+    text-align: center;
+    padding-top:2px;
+    border-right: 1px solid #eee;
+}
+.con3 li:last-child {
+    border-right: 0;
+}
+.con3 li p {
+    display: block;
+    font-size:11px;
+    padding-top:2px;
+}
+.con4 {
+    width: 100%;
+    height: 112px;
+    border-bottom:1px solid #eee;
+    box-sizing: border-box;
+}
+.con4 li {
+    float: left;
+    width: 24.8%;
+    height: 110px;
+    position: relative;
+    text-align: center;
+    padding-top:2px;
+    border-right: 1px solid #eee;
+}
+.con4 li:last-child {
+    border-right: 0;
+}
+.con4 li p {
+    display: block;
+    font-size:11px;
+    padding-top:2px;
+}
+
+/* footer banner */
+.ft_banner {
+    clear: both;
+    width: 100%;
+    position: relative;
+    background: #fff;
+    height: 69px;
+}
+.banBox {
+    width: 300%;
+    overflow: hidden;
+    position: relative;
+    height: 69px;
+}
+.banSlider {
+    width: 100%;
+    height: 69px;
+}
+.banSlider li {
+    float: left;
+    width: 33.3333%;
+    top: 10px;
+    position: absolute;
+}
+.banSlider img {
+    display: block;
+    width: 250px;
+    height: 47px;
+    margin: 0 auto;
+}
+
+/* footer */
+.ft {
+    clear: both;
+    width: 100%;
+}
+.notice {
+    width: 100%;
+    position: relative;
+    height: 18px;
+}
+.bgFrame {
+    width: 100%;
+    height: 18px;
+}
+.bgFrame img {
+    display: block;
+}
+.bgFrame p {
+    display: block;
+    z-index: 55;
+    font-size: 11px;
+    position: absolute;
+    color: #fff;
+    right: 50px;
+}
+.sitemap {
+    width: 100%;
+    height: 18px;
+    position: relative;
+    box-sizing: border-box;
+    border-bottom: 1px solid #eee;
+}
+.sitemap p {
+    font-size:12px;
+    float: left;
+    margin-left:30px;
+    display: block;
+}
+.sitemap .btnBox {
+    position: relative;
+    float: right;
+    width: 200px;
+    margin-top: 2px;
+}
+.btnBox button {
+    float: left;
+    display: block;
+    margin-right:4px;
+    outline: 0;
+    border: 0;
+    text-indent: -9999px;
+    background-color: transparent;
+    width: 46px;
+    height: 13px;
+}
+.btnBox button:nth-child(1) {
+    display: block;
+    background-image: url("./images/main_ft_btn1.png");
+}
+.btnBox button:nth-child(2) {
+    display: block;
+    background-image: url("./images/main_ft_btn2.png");
+}
+.btnBox button:last-child {
+    margin-right: 0;
+    display: block;
+    background-image: url("./images/main_ft_btn3.png");
+}
+.fnb {
+    position: relative;
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+}
+.fnb li {
+    width: 25%;
+    float: left;
+    line-height: 20px;
+}
+.fnb li a {
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    text-align: center;
+}
+.ft_ban {
+    display: block;
+    width: 251px;
+    height: 32px;
+    position: relative;
+    margin: 0 auto;
+}
+.copyright {
+    font-size:2px;
+    display: block;
+    text-align: center;
+}

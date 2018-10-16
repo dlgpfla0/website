@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <!-- 인터넷익스플로러 최신 버전으로 사이트 열기 -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <!-- 자동 새로고침 주기 -->
+    <meta http-equiv="refresh" content="180">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    
+    <!-- 사이트 정보 -->
+    <meta name="description" content="서울시, 농수산, 서울시농수산식품">
+    <meta name="path_role" content="ETC" />
+    <meta name="author" content="서울특별시, 서울시농수산식품공사" />
+    <meta name="description" content="농수산물 유통의 선도기업" />
+    <meta name="keywords" content="농산, 수산, 농수산, 서울농수산식품공사, 가락시장, 강서시장, 양곡시장, 함께서울, 서울특별시, 서울이야기" />
+    
+    <!-- Google Analytics -->
+    <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+    
+    <!-- 폰트 링크 -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR" rel="stylesheet">
+    
+    <title>서울시농수산식품공사</title>
+    
+    <link rel="stylesheet" href="./style.css">
+    
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="./js.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <input type="checkbox" id="menu_search" class="ck">
+        <header class="hd">
+            <label for="menu_search" class="search">
+                <i class="fas fa-search"></i>
+            </label>
+            <a href="index.html" class="logo">
+                <img src="./images/main_logo.png" alt="로고">
+            </a>
+            <label for="menu_call" class="lst">
+                <i class="fas fa-bars fs30"></i>
+                <i class="fas fa-times fs30"></i>
+            </label>
+        </header>
+        <img src="./images/main_color.png" alt="" class="mLine">
+        <div class="moWrap">
+            <aside class="mo gnb">
+                <nav class="gnb">
+                    <ul class="menu">
+                        <li>
+                            <span>정보공개</span>
+                            <ul>
+                                <li><a href="">정보공개제도안내</a></li>
+                                <li><a href="">정보공개목록</a></li>
+                                <li><a href="">주요결재문서</a></li>
+                                <li><a href="">회의록</a></li>
+                                <li><a href="">정보공개창구</a></li>
+                                <li><a href="">사전정보공개목록</a></li>
+                                <li>
+                                    <span>공공데이터개방</span>
+                                    <ul>
+                                        <li><a href="">공공데이터 개방 안내</a></li>
+                                        <li><a href="">공공데이터 개발 안내</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">기타자료</a></li>
+                                <li>
+                                    <span>고객의 소리</span>
+                                    <ul>
+                                        <li><a href="">고객의 소리</a></li>
+                                        <li><a href="">CEO와대화</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>유통정보</span>
+                            <ul>
+                                <li><a href="">송품장전자등록</a></li>
+                                <li>
+                                    <span>도매시장법인거래정보</span>
+                                    <ul>
+                                        <li><a href="">실시간거래정보</a></li>
+                                        <li><a href="">품목별가격</a></li>
+                                        <li><a href="">분석가격</a></li>
+                                        <li><a href="">표준지수</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <span>시장도매인거래정보</span>
+                                    <ul>
+                                        <li><a href="">실시간판매정보</a></li>
+                                        <li><a href="">품목별가격</a></li>
+                                        <li><a href="">분석가격</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <span>중도매인직접거래정본</span>
+                                    <ul>
+                                        <li><a href="">실시간 판매정보</a></li>
+                                        <li><a href="">품목별 가격</a></li>
+                                        <li><a href="">분석가격</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <span>동향및전망</span>
+                                    <ul>
+                                        <li><a href="">주요품목일일동향</a></li>
+                                        <li><a href="">주요품목주간동향</a></li>
+                                        <li><a href="">주요품목월간동향</a></li>
+                                        <li><a href="">주요품목월간전망</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <span>유통자료실</span>
+                                    <ul>
+                                        <li><a href="">정기간행물</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <span>生生리포트</span>
+                                    <ul>
+                                        <li><a href="">이슈농수산물거래속보</a></li>
+                                        <li><a href="">제철농수산물테마리포트</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">ARS안내</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>시장소통</span>
+                            <ul>
+                                <li><a href="">주요사업내용공지</a></li>
+                                <li>
+                                    <span>고객상담실</span>
+                                    <ul>
+                                        <li><a href="">자주묻는질문(FAQ)</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <span>고객참여</span>
+                                    <ul>
+                                        <li><a href="">상상제안</a></li>
+                                        <li><a href="">온라인설문조사</a></li>
+                                        <li><a href="">사업제안하기</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">이달의수산물</a></li>
+                                <li>
+                                    <span>민원처리업무</span>
+                                    <ul>
+                                        <li><a href="">민원처리업무소개</a></li>
+                                        <li><a href="">등록업무</a></li>
+                                        <li><a href="">허가업무</a></li>
+                                        <li><a href="">임대차계약업무</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">민원양식방</a></li>
+                                <li>
+                                    <span>고객서비스</span>
+                                    <ul>
+                                        <li><a href="">고객서비스현장개념</a></li>
+                                        <li><a href="">고객서비스현장보기</a></li>
+                                        <li><a href="">이행실적</a></li>
+                                        <li><a href="">고객만족도결과</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>시장이용정보</span>
+                            <ul>
+                                <li>
+                                    <span>시장유통인소개</span>
+                                    <ul>
+                                        <li><a href="">유통인찾기</a></li>
+                                        <li><a href="">시장내점포찾기</a></li>
+                                        <li><a href="">도매회사</a></li>
+                                        <li><a href="">유통과정/유통인의역할</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">시장경매시간안내</a></li>
+                                <li><a href="">시장취급품목</a></li>
+                                <li>
+                                    <span>친환경농산물</span>
+                                    <ul>
+                                        <li><a href="">친환경농산물소개</a></li>
+                                        <li><a href="">인증제도소개</a></li>
+                                        <li><a href="">출하절차및혜택</a></li>
+                                        <li><a href="">낙찰내역확인방법</a></li>
+                                        <li><a href="">재포장취급자인증</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <span>농산물안전성검사</span>
+                                    <ul>
+                                        <li><a href="">안전성검사결과조회</a></li>
+                                        <li><a href="">검사방법</a></li>
+                                        <li><a href="">가락시장안전성검사체계</a></li>
+                                        <li><a href="">출하전안전성서비스안내</a></li>
+                                        <li><a href="">출하제한대상자</a></li>
+                                        <li><a href="">안전한농산물섭취요령</a></li>
+                                        <li><a href="">잔류농약허용기준조회</a></li>
+                                        <li><a href="">농약사용지침서</a></li>
+                                        <li><a href="">농산물안전성검사통계분석</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <span>원산지식별정보</span>
+                                    <ul>
+                                        <li><a href="">원산지표시안내</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <span>출하자신고</span>
+                                    <ul>
+                                        <li><a href="">출하자신고</a></li>
+                                        <li><a href="">출하정보조회</a></li>
+                                        <li><a href="">가격알림서비스</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <span>구매자신고</span>
+                                    <ul>
+                                        <li><a href="">구매자신고제안내</a></li>
+                                        <li><a href="">구매자신고신청</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">안전성검사지원</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>시장소식</span>
+                            <ul>
+                                <li><a href="">공지사항</a></li>
+                                <li>
+                                    <span>시장인력채용</span>
+                                    <ul>
+                                        <li><a href="">구인공고</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">공사채용공고</a></li>
+                                <li><a href="">자회사채용공고</a></li>
+                                <li><a href="">임대공고</a></li>
+                                <li><a href="">중도매인공고</a></li>
+                                <li>
+                                    <span>납품협력업체모집공고</span>
+                                    <ul>
+                                        <li><a href="">업무소개</a></li>
+                                        <li><a href="">모집가이드및선정기준</a></li>
+                                        <li><a href="">업체모집공고</a></li>
+                                        <li><a href="">업체선정결과</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <span>입찰공고</span>
+                                    <ul>
+                                        <li><a href="">업무소개</a></li>
+                                        <li><a href="">입찰공고</a></li>
+                                        <li><a href="">개찰결과</a></li>
+                                        <li><a href="">계약현황</a></li>
+                                        <li><a href="">수의계약공개(2017년이후)</a></li>
+                                        <li><a href="">수의계약공개(2016년이전)</a></li>
+                                        <li><a href="">사전발주계획</a></li>
+                                        <li><a href="">기타사항</a></li>
+                                        <li><a href="">적격기준및서식</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">무단방치물공고</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>윤리경영</span>
+                            <ul>
+                                <li>
+                                    <span>신고센터</span>
+                                    <ul>
+                                        <li><a href="">클린신고센터</a></li>
+                                        <li><a href="">부정부패신고센터</a></li>
+                                        <li><a href="">부당행위(갑질)신고센터</a></li>
+                                        <li><a href="">하도급부조리신고센터</a></li>
+                                        <li><a href="">공익신고</a></li>
+                                        <li><a href="">복지,보조금부정신고안내</a></li>
+                                        <li><a href="">청탁금지법위반신곤</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <span>윤리경영</span>
+                                    <ul>
+                                        <li><a href="">윤리경영의이해</a></li>
+                                        <li><a href="">윤리기준</a></li>
+                                        <li><a href="">UNGC</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <span>청렴반부패</span>
+                                    <ul>
+                                        <li><a href="">청렴반부패실적</a></li>
+                                        <li><a href="">청렴반부패자료실</a></li>
+                                        <li><a href="">부패행위현황공개</a></li>
+                                        <li><a href="">감사결과</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>시장소개</span>
+                            <ul>
+                                <li>
+                                    <span>가락시장</span>
+                                    <ul>
+                                        <li><a href="">가락시장소개</a></li>
+                                        <li><a href="">출하안내</a></li>
+                                        <li><a href="">환경교통개선</a></li>
+                                        <li><a href="">도매시장의기능</a></li>
+                                        <li><a href="">교통편/약도</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <span>강서시장</span>
+                                    <ul>
+                                        <li><a href="">강서시장소개</a></li>
+                                        <li><a href="">경매제시장</a></li>
+                                        <li><a href="">시장도매인제시장</a></li>
+                                        <li><a href="">교통편/약도</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <span>양곡시장</span>
+                                    <ul>
+                                        <li><a href="">양곡시장소개</a></li>
+                                        <li><a href="">출하안내</a></li>
+                                        <li><a href="">교통편/약도</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">서울친환경유통센터</a></li>
+                                <li><a href="">가락몰</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>공사소개</span>
+                            <ul>
+                                <li>
+                                    <span>일반현황</span>
+                                    <ul>
+                                        <li><a href="">경영과비전</a></li>
+                                        <li><a href="">설립목적</a></li>
+                                        <li><a href="">연혁</a></li>
+                                        <li><a href="">조직및기능</a></li>
+                                        <li><a href="">직무수행요건</a></li>
+                                        <li><a href="">직원공무국외출장보고서</a></li>
+                                        <li><a href="">법률고문운영현황</a></li>
+                                        <li><a href="">공사차량보유현황</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">CEO인사말</a></li>
+                                <li>
+                                    <span>주요사업</span>
+                                    <ul>
+                                        <li><a href="">공영도매시장운영</a></li>
+                                        <li><a href="">유통정보전파</a></li>
+                                        <li><a href="">출하자신고</a></li>
+                                        <li><a href="">안전성및등급표준화검사</a></li>
+                                        <li><a href="">원산지표시제및친환경농산물</a></li>
+                                        <li><a href="">전자경매및포장화유도</a></li>
+                                        <li><a href="">시설현대화사업</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <span>지속가능경영</span>
+                                    <ul>
+                                        <li><a href="">전략체계</a></li>
+                                        <li><a href="">중장기계획수립</a></li>
+                                        <li><a href="">이해관계자정의</a></li>
+                                        <li><a href="">지속가능경영보고서</a></li>
+                                        <li><a href="">온실가스배출량검증서</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <span>경영공시</span>
+                                    <ul>
+                                        <li><a href="">개요</a></li>
+                                        <li><a href="">경영목표</a></li>
+                                        <li><a href="">사업계획</a></li>
+                                        <li><a href="">예산현황</a></li>
+                                        <li><a href="">결산현황</a></li>
+                                        <li><a href="">업무추진비공표</a></li>
+                                        <li><a href="">외부기관평가</a></li>
+                                        <li><a href="">사규및관련법령</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <span>사이버홍보실</span>
+                                    <ul>
+                                        <li><a href="">농수공뉴스</a></li>
+                                        <li><a href="">영상자료관</a></li>
+                                        <li><a href="">CI&BI</a></li>
+                                        <li><a href="">Character</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+        </div>
+        <main class="content">
+            <section class="main1">
+                <div class="imgBox">
+                    <ul class="slider">
+                        <li>
+                            <img src="./images/main1_img1.png" alt="">
+                        </li>
+                        <li>
+                            <img src="./images/main1_img2.png" alt="">
+                        </li>
+                        <li>
+                            <img src="./images/main1_img3.png" alt="">
+                        </li>
+                    </ul>
+                    <button class="left">left</button>
+                    <button class="right">right</button>
+                </div>
+            </section>
+            <section class="ban">
+                <a href="" class="banner">
+                    <img src="./images/banner.png" alt="">
+                </a>
+            </section>
+            <section class="grid">
+                <div class="gridBox">
+                    <ul class="con1">
+                        <li class="icon1">
+                            <a href="">
+                                <img src="./images/grid_icon1.png" alt="">
+                                <p>출하자 신고</p>
+                            </a>
+                        </li>
+                        <li class="icon2">
+                            <a href="">
+                                <img src="./images/grid_icon2.png" alt="">
+                                <p>가격알림서비스신청</p>
+                            </a>
+                        </li>
+                        <li class="icon3">
+                            <a href="">
+                                <img src="./images/grid_icon3.png" alt="">
+                                <p>가격검색</p>
+                            </a>
+                        </li>
+                        <li class="icon4">
+                            <a href="">
+                                <img src="./images/grid_icon4.png" alt="">
+                                <p>실시간경매현황</p>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="con2">
+                        <li class="icon5">
+                            <a href="">
+                                <img src="./images/grid_icon5.png" alt="">
+                                <p>거래결과</p>
+                            </a>
+                        </li>
+                        <li class="icon6">
+                            <a href="">
+                                <img src="./images/grid_icon6.png" alt="">
+                                <p>송품장전자신고</p>
+                            </a>
+                        </li>
+                        <li class="icon7">
+                            <a href="">
+                                <img src="./images/grid_icon7.png" alt="">
+                                <p>시장인력채용</p>
+                            </a>
+                        </li>
+                        <li class="icon8">
+                            <a href="">
+                                <img src="./images/grid_icon8.png" alt="">
+                                <p>CEO와 대화</p>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="con3">
+                        <li class="icon9">
+                            <a href="">
+                                <img src="./images/grid_icon9.png" alt="">
+                                <p>시장소개</p>
+                            </a>
+                        </li>
+                        <li class="icon10">
+                            <a href="">
+                                <img src="./images/grid_icon10.png" alt="">
+                                <p>경매물량집계</p>
+                            </a>
+                        </li>
+                        <li class="icon11">
+                            <a href="">
+                                <img src="./images/grid_icon11.png" alt="">
+                                <p>경매시간안내</p>
+                            </a>
+                        </li>
+                        <li class="icon12">
+                            <a href="">
+                                <img src="./images/grid_icon12.png" alt="">
+                                <p>고객의소리</p>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="con4">
+                        <li class="icon13">
+                            <a href="">
+                                <img src="./images/grid_icon13.png" alt="">
+                                <p>유통인찾기</p>
+                            </a>
+                        </li>
+                        <li class="icon14">
+                            <a href="">
+                                <img src="./images/grid_icon14.png" alt="">
+                                <p>사이버홍보실</p>
+                            </a>
+                        </li>
+                        <li class="icon15">
+                            <a href="">
+                                <img src="./images/grid_icon15.png" alt="">
+                                <p>점포찾기</p>
+                            </a>
+                        </li>
+                        <li class="icon16">
+                            <a href="">
+                                <img src="./images/grid_icon16.png" alt="">
+                                <p>부정부패신고센터</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="ft_banner">
+                <div class="banBox">
+                    <ul class="banSlider">
+                        <li>
+                            <a href="">
+                                <img src="./images/banner_img1.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="./images/banner_img2.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="./images/banner_img3.png" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+        <footer class="ft">
+            <section class="notice">
+                <div class="bgFrame">
+                    <p>2018년 제2회 희망광고 소재 공모</p>
+                    <img src="./images/notice_BG.png" alt="" class="bg">
+                </div>
+            </section>
+            <section class="sitemap">
+                <p>ⓒ 서울시농수산식품공사</p>
+                <div class="btnBox">
+                    <button>사이트맵</button>
+                    <button>ENGLISH</button>
+                    <button>PC버전</button>
+                </div>
+            </section>
+            <div class="fnb">
+                <ul>
+                    <li><a href="">찾아오시는 길</a></li>
+                    <li><a href="">개인정보처리방침</a></li>
+                    <li><a href="">저작권보호정책</a></li>
+                    <li><a href="">정보공개창구</a></li>
+                </ul>
+            </div>
+            <a href="" class="ft_ban">
+                    <img src="./images/footer_ban.png" alt="">
+            </a>
+            <p class="copyright">
+                COPYRIGHT(C) SEOUL AGRO-FISHERIES & FOOD CORPORATION ALL RIGHTS RESERVED.
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
