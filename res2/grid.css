@@ -1,0 +1,88 @@
+@charset "utf-8";
+
+.gird1 {
+    width: 94%;
+    min-width:320px;
+    margin: 0 auto;
+}
+.grid1 [class*=col] {
+    float: left;
+} 
+.grid1 [class*=col].first, .grid1 [class*=col]:first-child {
+    clear: both;
+}
+.col1 { width:80px; }
+.col2 { width:160px; }
+.col3 { width:240px; }
+.col4 { width:320px; }
+.col5 { width:400px; }
+.col6 { width:480px; }
+.col7 { width:560px; }    
+.col8 { width: 640px; }   .col9 { width: 720px;}
+.col10 { width: 800px;}
+.col11 { width: 880px;} 
+.col12 { width: 960px;}
+
+/* 거터 : 없음, 너비 : 100px, 12열, 총폭:1200px  */
+#page1 .grid3 {
+    width: 80%; margin:0 auto; max-width:100%; overflow:hidden;
+}
+.grid3 { width:1200px; margin:0 auto; max-width:100%; overflow:hidden; }
+.grid3 li { float:left; }
+.grid3 li .full { display:block; width:100%; }
+.grid3 li .inner { display:block; width:90%; margin:0 auto; }
+.grid3 li .picImg { display:block; width:100%; }
+.grid3 li.first, .grid3 li:first-child { clear:both; } 
+.co1 { width:100px; }
+.co2 { width:200px; }
+#page1 .pageWrap .iconLst .co3 {
+    width: 16%;
+}
+.co3 { width:300px; }
+.co4 { width:400px; }
+.co5 { width:500px; }
+.co6 { width:600px; }
+.co7 { width:700px; }    
+.co8 { width:800px; }    
+.co9 { width:900px; }
+.co10 { width:1000px; }
+.co11 { width:1100px; } 
+.co12 { width:1200px; }
+
+/* 거터 : 없음, 너비 : 8%, 12열, 총폭:96% */
+.grid4 { margin:0 auto; min-width:320px; }
+.grid4 li { float:left; }
+/*.grid4 li:first-child { margin-left:2%; clear:both; }*/
+.grid4 li a { display:block; text-align:center; }
+.grid4 li a.full { display:block; width:100%; }
+.grid4 li a.inner { display:block; width:90%; margin:0 auto;}
+.grid4 li .pic { display:block; width:100%; height:auto; }
+.can1 { width: 8%; }
+.can2 { width: 16%; }
+.can3 { width: 24%; }
+.can4 { width: 32%; }
+.can5 { width: 40%; }
+.can6 { width: 48%; }
+.can7 { width: 56%; }
+.can8 { width: 64%; }
+.can9 { width: 72%; }
+.can10 { width: 80%; }
+.can11 { width: 88%; }
+.can12 { width: 96%; }
+
+/* 거터 2%, 너비 6.5%, 12열, 총폭:100%  */
+.grid5 { width:100%; margin:0 auto; min-width:320px; }
+.grid5 li { float:left; margin-right:2%; }
+.grid5 li:first-child { clear:both; }
+.ca1 { width: 6.5%; }
+.ca2 { width: 15%; }
+.ca3 { width: 23.5%; }
+.ca4 { width: 32%; }
+.ca5 { width: 40.5%; }
+.ca6 { width: 49%; }
+.ca7 { width: 57.5%; }
+.ca8 { width: 66%; }
+.ca9 { width: 74.5%; }
+.ca10 { width: 83%; }
+.ca11 { width: 91.5%; }
+.ca12 { width: 100%; }
