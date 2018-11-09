@@ -49,3 +49,102 @@ $(document).ready(function(){
 });
 
 /* 타이핑 */
+$(document).ready(function(){
+    $(".vs_txt.bottom").unityping({
+        string: ['"i Always dream of a bright life."'],
+        typingSpeed: 600,
+        startDelay: 1000,
+        backSpeed: 100,
+        backDelay: 1000
+    });
+});
+
+/* 메인타이틀 컬러애니메이션 */
+$(document).ready(function(){
+    var rev1 = new RevealFx(document.querySelector('#mainTit1'), {
+        revealSettings : {
+            bgcolor: '#f9523c',
+            onCover: function(contentEI, revealerEI){
+                contentEI.style.opacity = 1;
+            }
+        }
+    });
+    rev1.reveal();
+    
+    var rev2 = new RevealFx(document.querySelector('#mainTit2'), {
+        revealSettings : {
+            bgcolor: '#fcf652',
+            delay: 250,
+            onCover: function(contentEI, revealerEI){
+                contentEI.style.opacity = 1;
+            }
+        }
+    });
+    rev2.reveal();
+});
+
+/* 탑버튼 구현 */
+$(document).ready(function(){
+    $(".scrolltop").click(function(event){
+        event.preventDefault();
+        $('html, body').animate({scrollTop:$(this.hash).offset().top}, 500);
+    });
+});
+
+/* 메뉴 클릭시 스크롤링 */
+$(document).ready(function(){
+    var speed = 700;
+    
+    function scrolling(obj) {
+        if(!obj){
+            $('html, body').animate({scrollTop:0}, speed);
+        } else {
+            var posTop = $(obj).offset().top -80;
+            $('html, body').animate({scrollTop:posTop}, speed);
+        }
+    };
+    
+    $("#gnb a").click(function(){
+        var direction = $(this).attr("href");
+        scrolling(direction);
+        return false;
+    });
+});
+
+/* 메뉴 온클릭 */
+$(document).ready(function(){
+    $("#gnb a").click(function(){
+        $("#gnb a").removeClass();
+        $(this).addClass('on');
+    });
+});
+
+/* 페이지 스크롤링 */
+/*
+$(document).ready(function(){
+    var sc_pg=parseInt($(window).height());
+    $(window).on('mousewheel', function(e){
+        if(e.originalEvent.wheelDelta < 0){
+            $('html, body').not(":animated").animate({scrollTop : '+='+sc_pg+'px'}, 800);
+        } else {
+            $('html, body').not(":animated").animate({scrollTop : '-='+sc_pg+'px'}, 800);
+        }
+        return false;
+    });
+});
+*/
+
+$(document).ready(function(){
+    $(window).scroll(function(){
+        var sct=$(window).scrollTop();
+        if(sct>=800){
+            $(".hd").css("position", "fixed");
+            $(".hd").not(":animated").slideDown(1000);
+        } else if(sct>=100){
+            $(".hd").css("display", "none");
+        } else {
+            $(".hd").css("position", "absolute");
+            $(".hd").not(":animated").slideDown(1000);
+        }
+    });
+});

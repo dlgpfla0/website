@@ -65,8 +65,20 @@ li {
     width: 100%;
     height: 100%;
     overflow: hidden;
+    background: #f6f6f6;
+    animation: fadein 2s;
 }
-
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+section {
+    background-color:#f6f6f6; 
+}
 .hd {
     width: 100%;
     position: fixed;
@@ -79,15 +91,15 @@ li {
     display: block;
     position: fixed;
     z-index:1;
-    top: 80px;
-    left: 150px;
+    top: 50px;
+    left: 100px;
 }
 
 #gnb {
     position: fixed;
     float: right;
     right: 80px;
-    top: 100px;
+    top: 70px;
     z-index: 10;
 }
 
@@ -100,7 +112,12 @@ li {
     letter-spacing: 1px;
     font-size: 20px;
 }
-
+.clear {
+    clear: both;
+}
+#gnb a.on {
+    color: #f9523c;
+}
 #gnb a:hover,
 #gnb a:focus {
     outline: none;
@@ -153,11 +170,10 @@ li {
 
 .visualTop {
     overflow: hidden;
-    background-image: url("./images/main_vs_BG.png");
-    height: 100%;
+    height: 100vh;
     clear: both;
     background-attachment: fixed;
-    width: 100%;
+    width: 100vw;
     position: relative;
 }
 .vs_txt.top {
@@ -184,7 +200,7 @@ li {
 
 .vs_title h1 {
     text-transform: uppercase;
-    font-weight: 900;
+    /* font-weight: 900; */
     font-size: 70px;
     line-height: 1.2;
     margin: 0 auto;
@@ -199,67 +215,110 @@ li {
     flex: none;
     display: inline-block;
     white-space: nowrap;
-    top: 400px;
-    left: 530px;
+    top: 350px;
+    left: 150px;
+}
+#mainTit1 p:first-child {
+    display: block;
+    opacity: 1;
+    font-family: 'Poppins', sans-serif;
+    font-size: 4vw;
+    color: #3f3f3f;
+    line-height: 1.2;
+    letter-spacing: initial;
+}
+#mainTit1 p.inner_element {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    pointer-events: none;
+    opacity: 0;
 }
 
 #mainTit2 {
     position: absolute;
-    bottom: 330px;
-    right: 560px;
+    flex: none;
+    display: inline-block;
+    white-space: nowrap;
+    top: 450px;
+    left: 150px;
+    letter-spacing: initial;
+}
+#mainTit2 p {
+    display: block;
+    opacity: 1;
+    font-family: 'Poppins', sans-serif;
+    font-weight: lighter;
+    font-size: 3vw;
+    color: #a9a9a9;
+    font-weight: lighter;
+}
+#mainTit2 p.inner_element {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    pointer-events: none;
+    opacity: 0;
 }
 
 .vs_txt.bottom {
-    width: 420px;
+    font-family: 'Poppins', sans-serif;
+    width: 500px;
     height: 40px;
+    display: block;
     position: absolute;
     bottom: 150px;
-    right: 150px;
-}
-
-.vs_txt.bottom p {
-    display: block;
-    font-family: 'Crimson Text', serif;
-    color: #363636;
+    left: 150px;
+    color: #f9523c;
+    font-weight: 500;
     font-size: 28px;
-    font-weight: 600;
+}
+.console_underscore {
+    display: inline-block;
+    position: relative;
+    top: -0.14em;
+    left: 10px;
+}
+.hidden {
+    opacity: 0;
 }
 
 .page-scrollBox {
-    width: 70px;
-    height: 70px;
+    width: 18px;
+    height: 111px;
     margin: 0 auto;
     background-position: center center;
     position: relative;
-    top: 700px;
+    top: 65%;
 }
 
 .btn-circle {
-    width: 70px;
-    height: 70px;
-    margin-top: 15px;
-    padding: 7px 16px;
-    border: 2px solid #f9523c;
-    border-radius: 100% !important;
-    font-size: 40px;
-    color: #f9523c;
+    width: 18px;
+    height: 111px;
     background: 0 0;
     transition: background .3s ease-in-out;
+    background-image: url(./images/scrolldown_btn.png);
+    background-position: center center;
+    display: block;
 }
 
 .btn-circle:focus,
 .btn-circle:hover {
-    outline: 0;
-    color: #fff;
-    background: #f9523c;
+    
 }
 
-.btn-circle i.fas {
+.btn-circle {
     transition-property: transform;
     transition-duration: 1s;
 }
 
-.btn-circle:hover i.fas {
+.btn-circle:hover {
     animation-name: pulse;
     animation-duration: 1.5s;
     animation-iteration-count: infinite;
@@ -267,13 +326,12 @@ li {
 }
 
 /* about */
-.about {
+#about {
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     clear: both;
     overflow: hidden;
-    background-image: url("./images/about_Bg.png");
 }
 
 .sectionTit h2 {
@@ -452,10 +510,10 @@ li {
 }
 
 /*ability */
-.ability {
+#ability {
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     top: 1880px;
     clear: both;
 }
@@ -542,8 +600,9 @@ li.html_effect h2 {
 
 li.html_effect p {
     display: block;
-    font-size: 16px;
-    font-weight: bold;
+    font-size: 17px;
+    font-weight: lighter;
+    color: #fff;
 }
 
 li.html_effect > div::before,
@@ -573,12 +632,11 @@ li.html_effect:hover img {
 }
 
 /* portfolio */
-.portfolio {
+#portfolio {
     position: absolute;
     width: 100%;
     height: 100%;
     top: 2900px;
-    background: #fff;
 }
 
 .portfolio .container {
@@ -772,11 +830,11 @@ ul.tab_grid li:hover div.icon-links a:first-child {
 }
 
 /* contact */
-.contact {
+#contact {
     text-align: center;
     position: absolute;
     top: 4000px;
-    width: 100%;
+    width: 100vw;
     height: 80%;
     overflow: hidden;
     background-attachment: fixed;
@@ -866,40 +924,36 @@ ul.tab_grid li:hover div.icon-links a:first-child {
 }
 
 #back-top a {
-    width: 60px;
-    height: 60px;
+    width: 44px;
+    height: 44px;
     display: block;
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;
-    color: #f9523c;
-    transition: 1s;
+    transition:0.8s;
     border-radius: 100%;
+    background-image: url(./images/icons/gotop_btn.png);
 }
 #back-top a:hover {
-    color:#eee;
-    transition-duration: 0.3s;
+    background-image: url(./images/icons/gotop_btn_hover.png);
 }
 
-#back-top a i.fa-angle-double-up {
-    font-size: 40px;
-}
+
 
 /* popup */
 #divpop {
     position: absolute;
-    left: 200px;
-    top: 450px;
+    right: 200px;
+    top: 550px;
     z-index: 1000;
     visibility: hidden;
     width: 250px;
     height: 300px;
-    border: 3px solid #fff;
+    border: 1px solid #333;
 }
 #divpop p {
     text-align: center;
     padding-top:25px;
-    color: #fff;
     font-size: 17px;
 }
 #divpop .popupcode {

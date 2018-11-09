@@ -31,37 +31,43 @@
     <script src="./js/owl.carousel.js"></script>
     <script src="./js/SmoothScroll.min.js"></script>
     <script src="./js/popup.js"></script>
-    <script src="js.js"></script>
+    <script src="./js.js"></script>
+    <script src="./js/typing.js"></script>
+    <script src="./js/anime.min.js"></script>
+    <script src="./js/main.js"></script>
 </head>
 <body>
     <div id="Wrap">
         <header class="hd">
             <a href="index.html" class="logo">
-                <img src="./images/logo.png" alt="logo">
+                <img src="./images/logo2.png" alt="logo">
             </a>
             <nav id="gnb">
-                <a href="#about" class="gnb_about">About</a>
-                <a href="#ability" class="gnb_ability">Ability</a>
-                <a href="#portfolio" class="gnb_portfolio">Portfolio</a>
-                <a href="#contact" class="gnb_contact">Contact</a>
+                <a href="#about" class="menu1">About</a>
+                <a href="#ability" class="menu2">Ability</a>
+                <a href="#portfolio" class="menu3">Portfolio</a>
+                <a href="#contact" class="menu4">Contact</a>
             </nav>
         </header>
-        <div class="visualTop">
-            <div class="vs_txt top">
-                <p class="vs_txt_top">UI / UX Designer</p>
-            </div>
+        <div class="visualTop" id="main">
             <div class="vs_title">
                 <h1 id="mainTit1" class="vs_title inner">
-                    <span id="mainTit1-prefix">LEE HAE LIM</span>
-                    <span id="mainTit1-txt">Portfolio</span>
+                    <p class="inner_content">LEE HAE LIM PORTFOLIO
+                    </p>
+                    <p class="inner_element" style="transform:scaleX(0); transform-origin: 100% 50% 0px; background-color:rgb(127, 64, 241); opacity: 1;"></p>
+                </h1>
+                <h1 id="mainTit2" class="vs_title inner">
+                    <p class="inner_content">IT IS A UI&UX <br> DESIGNED FOR USERS.</p>
+                    <p class="inner_element" style="transform:scaleX(0); transform-origin: 100% 50% 0px; background-color:rgb(252, 246, 82); opacity: 1;"></p>
                 </h1>
             </div>
             <div class="vs_txt bottom">
-                <p class="vs_txt_bottom">i Always dream of a bright life.</p>
+                <span id="text">
+                    <div class="console-underscore" id="console"></div>
+                </span>
             </div>
             <div class="page-scrollBox">
                 <a href="#about" class="btn btn-circle page-scroll">
-                    <i class="fas fa-angle-double-down"></i>
                 </a>
             </div>
         </div>
@@ -218,7 +224,7 @@
                     <div id="tab1" class="tab_content">
                         <ul class="tab_grid">
                             <li>
-                                <img src="./images/web1.png" alt="desktop1">
+                                <img src="./images/desk_mockup_lovinher1.png" alt="lovinher">
                                 <div class="effectBox">
                                     <h2>
                                     러빈허 카페(카페) - 적응형 웹 사이트</h2>
@@ -230,7 +236,7 @@
                                 </div>
                             </li>
                             <li>
-                                <img src="./images/web2_mockup.png" alt="desktop1">
+                                <img src="./images/desk_mockup_hanji.png" alt="desktop1">
                                 <div class="effectBox">
                                     <h2>전주 한지(지역특산품) - 적응형 웹 사이트</h2>
                                     <div class="icon-links">
@@ -241,7 +247,7 @@
                                 </div>
                             </li>
                             <li>
-                                <img src="./images/web3_mockup.png" alt="desktop1">
+                                <img src="./images/desk_mockup_bodyfantasies.png" alt="desktop1">
                                 <div class="effectBox">
                                     <h2>바디판타지(화장품) - 적응형 웹 사이트</h2>
                                     <div class="icon-links">
@@ -252,7 +258,7 @@
                                 </div>
                             </li>
                             <li>
-                                <img src="./images/web4_mockup.png" alt="desktop1">
+                                <img src="./images/desk_mockup_inditex.png" alt="desktop1">
                                 <div class="effectBox">
                                     <h2>INDITEX(패션기업) - 적응형 웹 사이트</h2>
                                     <div class="icon-links">
@@ -263,7 +269,7 @@
                                 </div>
                             </li>
                             <li>
-                                <img src="./images/web5_mockup.png" alt="desktop1">
+                                <img src="./images/desk_mockup_daeyoung.png" alt="desktop1">
                                 <div class="effectBox">
                                     <h2>대영이엔씨(기업사이트) - 적응형 웹 사이트</h2>
                                     <div class="icon-links">
@@ -274,7 +280,7 @@
                                 </div>
                             </li>
                             <li>
-                                <img src="./images/web6_mockup.png" alt="desktop1">
+                                <img src="./images/desk_mockup_tylenol.png" alt="desktop1">
                                 <div class="effectBox">
                                     <h2>타이레놀(제약회사) - 적응형 웹 사이트</h2>
                                     <div class="icon-links">
@@ -337,7 +343,7 @@
                     <div id="tab3" class="tab_content">
                         <ul class="tab_grid" style="margin-left: 16%;">
                             <li>
-                                <img src="./images/mobile_mockup1.png" alt="mobile1">
+                                <img src="./images/mobile_mockup_gucci.png" alt="mobile1">
                                 <div class="effectBox">
                                     <h2>구찌(악세서리 브랜드) - 모바일 웹 사이트</h2>
                                     <div class="icon-links">
@@ -348,7 +354,7 @@
                                 </div>
                             </li>
                             <li>
-                                <img src="./images/mobile_mockup2.png" alt="mobile2">
+                                <img src="./images/mobile_mockup_space.png" alt="mobile2">
                                 <div class="effectBox">
                                     <h2 style="font-size: 15px;">디자인스페이스817(인테리어 브랜드) - 모바일 웹 사이트</h2>
                                     <div class="icon-links">
@@ -359,7 +365,7 @@
                                 </div>
                             </li>
                             <li>
-                                <img src="./images/mobile_mockup3.png" alt="mobile3">
+                                <img src="./images/mobile_mockup_seoulfood.png" alt="mobile3">
                                 <div class="effectBox">
                                     <h2 style="font-size: 15px;">서울시농수산식품공사(지역공기업) - 모바일 웹 사이트</h2>
                                     <div class="icon-links">
@@ -370,7 +376,7 @@
                                 </div>
                             </li>
                             <li>
-                                <img src="./images/mobile_mockup4.png" alt="mobile4">
+                                <img src="./images/mobile_mockup_samsungcard.png" alt="mobile4">
                                 <div class="effectBox">
                                     <h2>삼성카드(금융기업) - 모바일 웹 사이트</h2>
                                     <div class="icon-links">
@@ -442,7 +448,7 @@
             </div>
         </section>
         <p id="back-top" style="display: block;">
-            <a href="index.html"><i class="fas fa-angle-double-up"></i></a>
+            <a href="#main" class="scrolltop"></a>
         </p>
         <footer class="ft">
             <div class="container text-center">
