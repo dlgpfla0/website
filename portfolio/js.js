@@ -84,10 +84,22 @@ $(document).ready(function(){
 });
 
 /* 탑버튼 구현 */
-$(document).ready(function(){
-    $(".scrolltop").click(function(event){
-        event.preventDefault();
-        $('html, body').animate({scrollTop:$(this.hash).offset().top}, 500);
+$("#back-top").hide();
+
+$(function(){
+    $(window).scroll(function(){
+        if ($(this).scrollTop() > 100) {
+            $('#back-top').fadeIn();
+        } else {
+            $('#back-top').fadeOut();
+        }
+    });
+    
+    $('#back-top a').click(function(){
+        $('body, html').animate({
+            scrollTop: 0
+        }, 800);
+        return false;
     });
 });
 
@@ -125,15 +137,16 @@ $(document).ready(function(){
     var sc_pg=parseInt($(window).height());
     $(window).on('mousewheel', function(e){
         if(e.originalEvent.wheelDelta < 0){
-            $('html, body').not(":animated").animate({scrollTop : '+='+sc_pg+'px'}, 800);
+            $('body, html').not(":animated").animate({scrollTop : '+='+sc_pg+'px'}, 800);
         } else {
-            $('html, body').not(":animated").animate({scrollTop : '-='+sc_pg+'px'}, 800);
+            $('body, html').not(":animated").animate({scrollTop : '-='+sc_pg+'px'}, 800);
         }
         return false;
     });
 });
 */
 
+/* 헤더영역스크롤링 구현 */
 $(document).ready(function(){
     $(window).scroll(function(){
         var sct=$(window).scrollTop();
@@ -148,3 +161,27 @@ $(document).ready(function(){
         }
     });
 });
+
+/* 메뉴 슬라이드 구현 */
+$(document).ready(function(){
+	
+	// 공통 - 네비게이션
+	var isActive = false;
+	$('#menu ul li a').on('click',function(){
+		$('#ham-menu').removeClass('active');
+		$('#menu').stop().animate({top:'-100%'},300);	
+		isActive =!isActive;
+	});		
+	$('#ham-menu').on('click',function(){
+		$(this).toggleClass('active');// 햄버거 버튼 효과
+		if(isActive){
+			//닫힘
+			$('#menu').stop().animate({top:'-100%'},300);						
+		}else{
+			//열림
+			$('#menu').stop().animate({top:0},300);	
+		}
+		isActive =!isActive;
+	});
+});
+
