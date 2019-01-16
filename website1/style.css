@@ -96,7 +96,6 @@ a {
     list-style: none;
     right:50px;
     margin-right:60px;
-    display:none;
 }
 .gnb li.menu .sub {
     width: 1200px;
@@ -105,7 +104,7 @@ a {
     position:absolute;
     float:left;
     opacity:1;
-    
+    display:none;
 }
 
 
