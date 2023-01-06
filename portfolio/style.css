@@ -1629,10 +1629,6 @@ h2.con-tit {
         flex-direction: column;
         justify-content: center;
     }
-    #portfolio {
-        top: 3300px;
-        height: 1500px;
-    }
     .tab_container .tab_content ul li {
         display: flex;
         height: 250px;
