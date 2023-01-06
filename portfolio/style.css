@@ -1697,6 +1697,17 @@ h2.con-tit {
     #ft .container.text-center {
         font-size:15px;
     }
+    .port-pop div {
+        height:auto;
+        padding:30px 10px;
+    }
+    .port-pop div img {
+        width:100%;
+    }
+    .port-pop a.close-btn {
+        right:25px;
+        font-size: 1.8em;
+    }
 }
 
 @media all and (max-width:768px) {
