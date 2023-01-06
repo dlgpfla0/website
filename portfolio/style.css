@@ -1593,7 +1593,7 @@ h2.con-tit {
     background-size: cover;
 }
 .tab_container #tab3 ul li {
-   margin: 1% 5.1%;
+   margin: 1% 6%;
 }
 
 
@@ -1619,9 +1619,11 @@ h2.con-tit {
     }
     #divpop {
         right: 20px;
+        top: calc(50vh - 0px);
     }
     .intro-wrap, #portfolio {
-       padding: 50px;
+       padding: 10px;
+       top: 70%;
     }
     .intro-wrap .intro-box {
         flex-direction: column;
@@ -1649,12 +1651,45 @@ h2.con-tit {
     .contactBox .col-md-3 {
         float: left;
     }
+    .page-downBtn {
+        top:calc(50vh - 80px);
+        left:calc(50vw - 50px);
+    }
+    h2.con-tit {
+        font-size:1.4em;
+    }
+    .intro-wrap .myphoto {
+        align-items:center;
+    }
+    .intro-wrap .myphoto .intro-tit {
+        font-size:1.2em;
+    }
+    .intro-wrap .myphoto .intro-txt {
+        font-size: 1.1em;
+        text-align: center;
+    }
+    .intro-wrap .myphoto ul.intro-con {
+        text-align: center;
+        width: 100%;
+        background: #f3fcff;
+    }
+    .intro-box .intro-sub ul.intro-con h3 {
+        font-size:1.3em;
+    }
+    .intro-box .intro-sub ul.intro-con li {
+        font-size:1.1em;
+    }
+    .intro-box .intro-sub ul.intro-con li p {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 @media all and (max-width:768px) {
     .visualTop {
         width:96%;
         margin:0 auto;
+        height: 50vh;
     }
     #mainTit1 {
     display: flex;
@@ -1662,7 +1697,7 @@ h2.con-tit {
     left: 0;
     }
     #mainTit1 p:first-child, #mainTit2 p  {
-          font-size: 20px;
+          font-size: 22px;
     }
     #mainTit2 {
             left: 0;
