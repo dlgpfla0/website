@@ -832,7 +832,7 @@ ul.tabs li.active {
 
 
 .tab_container .tab_content ul li {
-    width: 18%;
+    width: 23%;
     height: 400px;
     float: left;
     margin: 1%;
@@ -1068,15 +1068,15 @@ ul.tab_grid li {
 
 
 ul.tab_grid li .effectBox {
-    top: auto;
+    /* top: 0; */
     width: 100%;
     bottom: 0px;
     padding: 10px;
     height: 140px;
     opacity: 0.9;
-    background: #ffffff;
-    transition: transform 0.35s;
-    transform: translate3d(0, 100%, 0);
+    background: #e8e8e8;
+    /* transition: transform 0.35s; */
+    /* transform: translate3d(0, 100%, 0); */
     text-transform: uppercase;
     backface-visibility: hidden;
     position: absolute;
@@ -1098,10 +1098,10 @@ ul.tab_grid li > div h2 {
 
 ul.tab_grid li div h2,
 ul.tab_grid li div .icon-links a {
-    transition: transform 0.35s;
-    -webkit-transition: -webkit-transform 0.35s;
-    transform: translate3d(0, 200%, 0);
-    -webkit-transform: translate3d(0, 200%, 0);
+    /* transition: transform 0.35s; */
+    /* -webkit-transition: -webkit-transform 0.35s; */
+    /* transform: translate3d(0, 200%, 0); */
+    /* -webkit-transform: translate3d(0, 200%, 0); */
 }
 
 .icon-links {padding-top: 20px;font-size: 1.7em;}
@@ -1132,10 +1132,10 @@ ul.tab_grid li p.description {
 
 ul.tab_grid li > h2,
 ul.tab_grid li div.icon-links a {
-    transition: transform 0.35s;
+    /* transition: transform 0.35s; */
     -webkit-transition: -webkit- transform 0.35s;
-    -webkit-transform: translate3d(0, 200%, 0);
-    transform: translate3d(0, 200%, 0);
+    /* -webkit-transform: translate3d(0, 200%, 0); */
+    /* transform: translate3d(0, 200%, 0); */
     color: #f9523c;
 }
 
@@ -1628,7 +1628,7 @@ h2.con-tit {
         justify-content: center;
     }
     #portfolio {
-        top:2800px;
+        top: 3300px;
         height: 1500px;
     }
     .tab_container .tab_content ul li {
