@@ -820,7 +820,6 @@ ul.tabs li.active {
 .tab_content {
     width: 100%;
     height: 100%;
-    position: absolute;
 }
 
 .tab_container .tab_content ul {
@@ -1596,7 +1595,7 @@ h2.con-tit {
     background-size: cover;
 }
 .tab_container #tab3 ul li {
-   margin: 1% 6%;
+   margin: 1% 5.1%;
 }
 
 
