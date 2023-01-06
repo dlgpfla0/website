@@ -1181,7 +1181,6 @@ ul.tab_grid li:hover div.icon-links a:first-child {
     /* position: absolute; */
     top: 3721px;
     width: 100%;
-    height: 600px;
     overflow: hidden;
     padding: 100px 180px;
     background-attachment: fixed;
@@ -1637,20 +1636,21 @@ h2.con-tit {
     .tab_container .tab_content ul li {
         display: flex;
         height: 250px;
-        min-width:48%;
+        min-width:100%;
     }
     .tab_container #tab3 ul li {
         margin:1%;
     }
     #contact {
-        top:4300px;
-        padding: 50px;
+        padding: 30px 10px;
     }
     #ft {
         top:4800px;
     }
     .contactBox .col-md-3 {
         float: left;
+        width: 100%;
+        margin-bottom: 19px;
     }
     .page-downBtn {
         top:calc(50vh - 80px);
@@ -1683,6 +1683,23 @@ h2.con-tit {
     .intro-box .intro-sub ul.intro-con li p {
         display: flex;
         flex-direction: column;
+    }
+    .intro-wrap .myphoto ul.intro-con li {
+        font-size:1.1em;
+    }
+    ul.tabs {
+        width:100%;
+    }
+    ul.tab_grid li > div h2 {
+        font-size:16px;
+        word-break: keep-all;
+    }
+    .icon-links {
+        font-size: 1.3em;
+        padding-top: 10px;
+    }
+    #ft .container.text-center {
+        font-size:15px;
     }
 }
 
